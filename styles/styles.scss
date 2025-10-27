@@ -36,7 +36,7 @@ $transition: all 0.3s ease-in-out;
   line-height: 1.25;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px;
+  max-width: 1200px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
@@ -237,12 +237,12 @@ $transition: all 0.3s ease-in-out;
     color: $color-bg;
 
     &__text-wrapper {
-      padding: 30px 40px;
+      padding: 32px;
       background-color: $color-accent-2;
     }
 
     .es-features__bg__image {
-      object-position: right;
+      object-position: top right;
     }
 
     &__label {
@@ -347,9 +347,14 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
-    @container es-rc-content (min-width: 745px) {
+    @container es-rc-content (min-width: 880px) {
+      background-color: $color-accent-2;
+      padding: $px-XXL $px-XL;
       position: relative;
       z-index: 1;
+      &__text-wrapper {
+        padding: 0;
+      }
       &__text-wrapper {
         background-color: transparent;
       }
@@ -366,7 +371,7 @@ $transition: all 0.3s ease-in-out;
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
+        right: -6px;
         height: 100%;
         width: 100%;
         z-index: -1;
@@ -381,11 +386,13 @@ $transition: all 0.3s ease-in-out;
           width: 40%;
         }
         &--bottom {
-          width: 68%;
+          width: 50%;
+          max-width: 600px;
+          margin-top: 48px;
         }
       }
     }
-    @container es-rc-content (min-width: 900px) {
+    @container es-rc-content (min-width: 1012px) {
       padding: $px-XXL $px-XL;
       &__bg {
         width: 100%;
@@ -415,10 +422,9 @@ $transition: all 0.3s ease-in-out;
       &__wrapper {
         &--top {
           width: 40%;
-          max-width: 440px;
         }
         &--bottom {
-          width: 70%;
+          width: 50%;
           max-width: 600px;
           margin-top: 48px;
         }
@@ -427,7 +433,7 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 980px) {
       overflow: hidden;
       &__bg {
-        width: 105%;
+        width: 95%;
       }
     }
   }
@@ -442,6 +448,7 @@ $transition: all 0.3s ease-in-out;
     &__night-cream-img {
       position: absolute;
       width: 300px;
+      z-index: -1;
     }
 
     &__content {
@@ -488,10 +495,6 @@ $transition: all 0.3s ease-in-out;
       &__night-cream-img {
         max-width: 386px;
         width: 100%;
-      }
-
-      &__content {
-        margin-top: 391px;
       }
     }
     @container es-rc-content (min-width: 766px) {
@@ -599,7 +602,7 @@ $transition: all 0.3s ease-in-out;
         }
       }
       &__container {
-        width: 50%;
+        width: 35%;
       }
     }
   }
@@ -612,7 +615,7 @@ $transition: all 0.3s ease-in-out;
     }
 
     & > *:last-child {
-      flex: 0 0 47%;
+      flex: 0 0 40%;
     }
 
     &__image {
@@ -622,8 +625,7 @@ $transition: all 0.3s ease-in-out;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      gap: 15px;
-      padding-right: 12px;
+      gap: 42px;
 
       background-color: $color-accent-2;
       color: $color-bg;
