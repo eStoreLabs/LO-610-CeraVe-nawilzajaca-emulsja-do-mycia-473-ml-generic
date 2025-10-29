@@ -433,28 +433,27 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 980px) {
       overflow: hidden;
       &__bg {
-        width: 95%;
+        width: 102%;
       }
     }
   }
 
   .es-ingredients {
     z-index: 1;
-
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     &__night-cream-img {
       position: absolute;
       top: 10px;
       left: 0;
-      width: 300px;
+      width: 390px;
       z-index: -1;
     }
 
     &__content {
-      padding: $px-L;
+      padding: 60px $px-L;
     }
     &__title {
       font-size: 32px;
@@ -465,7 +464,7 @@ $transition: all 0.3s ease-in-out;
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
-      gap: $px-L;
+      gap: 80px;
       &__item {
         display: flex;
         flex-direction: column;
@@ -485,7 +484,7 @@ $transition: all 0.3s ease-in-out;
       &__title {
         font-weight: $fw-bold;
         text-transform: uppercase;
-        color: $color-accent-2;
+        color: #42B029;
         font-size: 19px;
       }
       &__text {

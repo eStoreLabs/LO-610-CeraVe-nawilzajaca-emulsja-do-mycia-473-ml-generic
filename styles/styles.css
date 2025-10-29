@@ -374,24 +374,24 @@
     overflow: hidden;
   }
   #es-rc #es-rc-content .es-features__bg {
-    width: 95%;
+    width: 102%;
   }
 }
 #es-rc #es-rc-content .es-ingredients {
   z-index: 1;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 #es-rc #es-rc-content .es-ingredients__night-cream-img {
   position: absolute;
   top: 10px;
   left: 0;
-  width: 300px;
+  width: 390px;
   z-index: -1;
 }
 #es-rc #es-rc-content .es-ingredients__content {
-  padding: 24px;
+  padding: 60px 24px;
 }
 #es-rc #es-rc-content .es-ingredients__title {
   font-size: 32px;
@@ -402,7 +402,7 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 24px;
+  gap: 80px;
 }
 #es-rc #es-rc-content .es-ingredients__list__item {
   display: flex;
