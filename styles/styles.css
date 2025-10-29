@@ -518,6 +518,7 @@
     display: none;
   }
   #es-rc #es-rc-content .es-benefits__container {
+    margin-left: 25px;
     position: relative;
     z-index: 2;
     width: 50%;
